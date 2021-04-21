@@ -1,0 +1,68 @@
+
+//CUSTOME NAVBAR
+.nav-wrap{
+  background: #2C3E50;
+  color:#fff;
+  padding: 0px;
+  padding-bottom: 100px;
+  .nav-main{
+        .card{
+            border: 0px;
+            border-radius: 0px;
+          .card-header{
+            background: #2c3e50;
+            border-radius: 0px;
+            h5{
+              a{
+                font-size: .7em;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: #fff;
+              }
+            }
+          }
+          .card-block{
+            padding: 0px;
+            ul.dw-nav{
+              background: #34495E;
+              list-style: none;
+              padding: 0px;
+              margin-bottom: 0px;
+              li{
+                list-style: none;
+                a{
+                  font-size: .9em;
+                  padding: 8px 0;
+                  color: #ccc;
+                  display: block;
+                  text-decoration: none;
+                  padding-left: 20px;
+                }
+                a:hover{
+                  background: #2C3E50;
+                  color: #E4F1FE!important;
+                }
+                a.active{
+                  background: #2C3E50;
+
+                  color: #E4F1FE!important;
+
+                }
+              }
+            }
+          }
+
+        }
+
+
+      }
+
+
+}
+
+
+// customize bootstrap nav
+
+.bg-inverse {
+    background-color: #22313F!important;
+}

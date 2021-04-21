@@ -1,0 +1,101 @@
+<!-- HTML -->
+<div class="form-group">
+    <label class="col-md-4 control-label" for="services_required">Services Required</label>
+    <div class="col-md-4">
+    <div class="checkbox">
+        <label for="hd-pics">
+            <input type="checkbox" id="hd-pics" onclick="hdPics()" value="HD Pictures (set of 10 HD pictures with NO EDITS)">
+            HD Pictures (set of 10 HD pictures with NO EDITS)</label> 
+            <p id="hd-pics-qty" style="display:none">Quantity: <input type="text"></p>
+    </div>
+
+    <div class="checkbox">
+    <label for="gsv">
+        <input type="checkbox" name="services_required" id="gsv" onclick="gsvP()" value="360° Virtual Tour Photography (Premium)">
+        360° Virtual Tour Photography (Premium)
+    </label>
+    <p id="gsv-qty" style="display:none">Quantity: <input type="text"></p>
+    </div>
+    <div class="checkbox">
+    <label for="gsv+">
+        <input type="checkbox" name="services_required" id="gsvp" onclick="gsvPlus()" value="360° Virtual Tour Photography (Premium Plus)">
+        360° Virtual Tour Photography (Premium Plus)
+    </label>
+    <p id="gsvp-qty" style="display:none">Quantity: <input type="text"></p>
+    </div>
+
+    <input type="button" onchange="totalPackage()" Value="Calculate Total" />
+    <div><span id="package"></span></div>
+
+</div>
+
+<!-- JavaScript -->
+<script>
+
+
+// HD CALCULATION
+function hdprice(){
+var hd = parseInt("2500");
+var qty = parseInt(document.getElementById("hd-pics-qty").value);
+document.getElementById("package").innerHTML = hd * qty;
+return hdtotal;
+}
+
+// GSV CALCULATION
+function gsvPrice(){
+var gsv = 4500;
+var qty = document.getElementById("gsv-qty").value;
+document.getElementById("package").innerHTML = gsv * qty;
+return gsvtotal;
+}
+
+// GSV PLUS CALCULATION
+function gsvPlusPrice(){
+var gsvp = 6500;
+var qty = document.getElementById("gsvp-qty").value;
+document.getElementById("package").innerHTML = gsvp * qty;
+return gsvptotal;
+}
+
+// GET TOTAL PACKAGE AMOUNT
+function totalPackage(){
+
+    var packageAmount = hdprice() + gsvPrice() + gsvPlusPrice();
+    document.getElementById("package").innerHTML = "Package Amount is ₹ " +packageAmount;
+}
+
+
+// HD PICTURES QUANTITY
+function hdPics() {
+  var checkBox = document.getElementById("hd-pics");
+  var text = document.getElementById("hd-pics-qty");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+
+// GSV QUANTITY
+function gsvP() {
+	var checkBox = document.getElementById("gsv");
+	var text = document.getElementById("gsv-qty");
+	if (checkBox.checked == true){
+	  text.style.display = "block";
+	} else {
+	   text.style.display = "none";
+	}
+  }
+
+  // GSV+ QUANTITY
+function gsvPlus() {
+	var checkBox = document.getElementById("gsvp");
+	var text = document.getElementById("gsvp-qty");
+	if (checkBox.checked == true){
+	  text.style.display = "block";
+	} else {
+	   text.style.display = "none";
+	}
+  }
+
+</script>

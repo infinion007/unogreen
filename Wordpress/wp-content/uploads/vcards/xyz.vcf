@@ -1,0 +1,7 @@
+BEGIN:VCARD
+VERSION:3.0
+N:;;;;
+FN:xyz
+SOURCE:http://localhost/wordpress/wp-content/uploads/vcards/xyz.vcf
+REV:2021-04-17
+END:VCARD

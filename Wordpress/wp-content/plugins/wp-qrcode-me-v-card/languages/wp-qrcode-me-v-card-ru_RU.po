@@ -1,0 +1,801 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: QR code MeCard/vCard generator\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-29 19:50+0300\n"
+"PO-Revision-Date: 2020-05-29 19:50+0300\n"
+"Last-Translator: root <stasionoks@yandex.ru>\n"
+"Language-Team: Русский\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 2.0.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: bootstrap.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Loco-Version: 2.3.1; wp-5.3.1\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: controller/class-wqm-qr-code-type.php:70
+#: svn/tags/1.0/controller/class-wqm-qr-code-type.php:69
+#: svn/tags/1.0/views/card-fields-form.php:85
+#: svn/tags/1.0/views/widget-config.php:11
+#: svn/tags/1.1.1/controller/class-wqm-qr-code-type.php:72
+#: svn/tags/1.1.1/views/card-fields-form.php:85
+#: svn/tags/1.1.1/views/widget-config.php:11
+#: svn/tags/1.1/controller/class-wqm-qr-code-type.php:72
+#: svn/tags/1.1/views/card-fields-form.php:85
+#: svn/tags/1.1/views/widget-config.php:11
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:70
+#: svn/tags/1.2/views/card-fields-form.php:87
+#: svn/tags/1.2/views/widget-config.php:13
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:70
+#: svn/tags/1.3/views/card-fields-form.php:87
+#: svn/tags/1.3/views/widget-config.php:14
+#: svn/trunk/controller/class-wqm-qr-code-type.php:70
+#: svn/trunk/views/card-fields-form.php:87 svn/trunk/views/widget-config.php:14
+#: views/card-fields-form.php:87 views/widget-config.php:14
+msgid "Title"
+msgstr "Должность"
+
+#: controller/class-wqm-qr-code-type.php:71
+#: svn/tags/1.0/controller/class-wqm-qr-code-type.php:70
+#: svn/tags/1.1.1/controller/class-wqm-qr-code-type.php:73
+#: svn/tags/1.1/controller/class-wqm-qr-code-type.php:73
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:71
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:71
+#: svn/trunk/controller/class-wqm-qr-code-type.php:71
+msgid "QR code"
+msgstr "QR код"
+
+#: controller/class-wqm-qr-code-type.php:72
+#: svn/tags/1.0/controller/class-wqm-qr-code-type.php:71
+#: svn/tags/1.1.1/controller/class-wqm-qr-code-type.php:74
+#: svn/tags/1.1/controller/class-wqm-qr-code-type.php:74
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:72
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:72
+#: svn/trunk/controller/class-wqm-qr-code-type.php:72
+msgid "Shortcode"
+msgstr "Шоткод"
+
+#: controller/class-wqm-qr-code-type.php:73
+#: svn/tags/1.0/controller/class-wqm-qr-code-type.php:72
+#: svn/tags/1.1.1/controller/class-wqm-qr-code-type.php:75
+#: svn/tags/1.1/controller/class-wqm-qr-code-type.php:75
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:73
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:73
+#: svn/trunk/controller/class-wqm-qr-code-type.php:73
+msgid "Direct url"
+msgstr "Прямая ссылка"
+
+#: controller/class-wqm-qr-code-type.php:74
+#: svn/tags/1.0/controller/class-wqm-qr-code-type.php:73
+#: svn/tags/1.1.1/controller/class-wqm-qr-code-type.php:76
+#: svn/tags/1.1/controller/class-wqm-qr-code-type.php:76
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:74
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:74
+#: svn/trunk/controller/class-wqm-qr-code-type.php:74
+msgid "Date"
+msgstr "Дата"
+
+#: controller/class-wqm-qr-code-type.php:102
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:102
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:102
+#: svn/trunk/controller/class-wqm-qr-code-type.php:102
+msgid "Create permanent url"
+msgstr "Создать постоянную ссылку"
+
+#: controller/class-wqm-qr-code-type.php:143
+#: svn/tags/1.0/controller/class-wqm-qr-code-type.php:127
+#: svn/tags/1.1.1/controller/class-wqm-qr-code-type.php:130
+#: svn/tags/1.1/controller/class-wqm-qr-code-type.php:130
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:143
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:143
+#: svn/trunk/controller/class-wqm-qr-code-type.php:143
+msgid "MeCard/vCard QR codes"
+msgstr "MeCard/vCard QR коды"
+
+#: controller/class-wqm-qr-code-type.php:144
+#: svn/tags/1.0/controller/class-wqm-qr-code-type.php:128
+#: svn/tags/1.1.1/controller/class-wqm-qr-code-type.php:131
+#: svn/tags/1.1/controller/class-wqm-qr-code-type.php:131
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:144
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:144
+#: svn/trunk/controller/class-wqm-qr-code-type.php:144
+msgid "All QR codes"
+msgstr "Все QR коды"
+
+#: controller/class-wqm-qr-code-type.php:145
+#: controller/class-wqm-qr-code-type.php:161
+#: svn/tags/1.0/controller/class-wqm-qr-code-type.php:129
+#: svn/tags/1.0/controller/class-wqm-qr-code-type.php:145
+#: svn/tags/1.1.1/controller/class-wqm-qr-code-type.php:132
+#: svn/tags/1.1.1/controller/class-wqm-qr-code-type.php:148
+#: svn/tags/1.1/controller/class-wqm-qr-code-type.php:132
+#: svn/tags/1.1/controller/class-wqm-qr-code-type.php:148
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:145
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:161
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:145
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:161
+#: svn/trunk/controller/class-wqm-qr-code-type.php:145
+#: svn/trunk/controller/class-wqm-qr-code-type.php:161
+msgid "QR code MeCard/vCard card"
+msgstr "QR код MeCard/vCard карты"
+
+#: controller/class-wqm-qr-code-type.php:146
+#: svn/tags/1.0/controller/class-wqm-qr-code-type.php:130
+#: svn/tags/1.1.1/controller/class-wqm-qr-code-type.php:133
+#: svn/tags/1.1/controller/class-wqm-qr-code-type.php:133
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:146
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:146
+#: svn/trunk/controller/class-wqm-qr-code-type.php:146
+msgid "Add New"
+msgstr "Добавить новый"
+
+#: controller/class-wqm-qr-code-type.php:147
+#: svn/tags/1.0/controller/class-wqm-qr-code-type.php:131
+#: svn/tags/1.1.1/controller/class-wqm-qr-code-type.php:134
+#: svn/tags/1.1/controller/class-wqm-qr-code-type.php:134
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:147
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:147
+#: svn/trunk/controller/class-wqm-qr-code-type.php:147
+msgid "Add New MeCard/vCard card"
+msgstr "Добавить новую MeCard/vCard карту"
+
+#: controller/class-wqm-qr-code-type.php:148
+#: svn/tags/1.0/controller/class-wqm-qr-code-type.php:132
+#: svn/tags/1.1.1/controller/class-wqm-qr-code-type.php:135
+#: svn/tags/1.1/controller/class-wqm-qr-code-type.php:135
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:148
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:148
+#: svn/trunk/controller/class-wqm-qr-code-type.php:148
+msgid "Edit"
+msgstr "Редкатировать"
+
+#: controller/class-wqm-qr-code-type.php:149
+#: svn/tags/1.0/controller/class-wqm-qr-code-type.php:133
+#: svn/tags/1.1.1/controller/class-wqm-qr-code-type.php:136
+#: svn/tags/1.1/controller/class-wqm-qr-code-type.php:136
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:149
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:149
+#: svn/trunk/controller/class-wqm-qr-code-type.php:149
+msgid "Edit MeCard/vCard card"
+msgstr "Редактировать MeCard/vCard карту"
+
+#: controller/class-wqm-qr-code-type.php:150
+#: svn/tags/1.0/controller/class-wqm-qr-code-type.php:134
+#: svn/tags/1.1.1/controller/class-wqm-qr-code-type.php:137
+#: svn/tags/1.1/controller/class-wqm-qr-code-type.php:137
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:150
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:150
+#: svn/trunk/controller/class-wqm-qr-code-type.php:150
+msgid "New MeCard/vCard card"
+msgstr "Новая  MeCard/vCard карта"
+
+#: controller/class-wqm-qr-code-type.php:151
+#: controller/class-wqm-qr-code-type.php:152
+#: svn/tags/1.0/controller/class-wqm-qr-code-type.php:135
+#: svn/tags/1.0/controller/class-wqm-qr-code-type.php:136
+#: svn/tags/1.1.1/controller/class-wqm-qr-code-type.php:138
+#: svn/tags/1.1.1/controller/class-wqm-qr-code-type.php:139
+#: svn/tags/1.1/controller/class-wqm-qr-code-type.php:138
+#: svn/tags/1.1/controller/class-wqm-qr-code-type.php:139
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:151
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:152
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:151
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:152
+#: svn/trunk/controller/class-wqm-qr-code-type.php:151
+#: svn/trunk/controller/class-wqm-qr-code-type.php:152
+msgid "View MeCard/vCard card"
+msgstr "Просмотреть  MeCard/vCard карту"
+
+#: controller/class-wqm-qr-code-type.php:153
+#: svn/tags/1.0/controller/class-wqm-qr-code-type.php:137
+#: svn/tags/1.1.1/controller/class-wqm-qr-code-type.php:140
+#: svn/tags/1.1/controller/class-wqm-qr-code-type.php:140
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:153
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:153
+#: svn/trunk/controller/class-wqm-qr-code-type.php:153
+msgid "Search QR code MeCard/vCard cards"
+msgstr "Искать в  QR кодах MeCard/vCard карты"
+
+#: controller/class-wqm-qr-code-type.php:154
+#: svn/tags/1.0/controller/class-wqm-qr-code-type.php:138
+#: svn/tags/1.1.1/controller/class-wqm-qr-code-type.php:141
+#: svn/tags/1.1/controller/class-wqm-qr-code-type.php:141
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:154
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:154
+#: svn/trunk/controller/class-wqm-qr-code-type.php:154
+msgid "No MeCard/vCard cards found"
+msgstr "Не найдено MeCard/vCard карт"
+
+#: controller/class-wqm-qr-code-type.php:155
+#: svn/tags/1.0/controller/class-wqm-qr-code-type.php:139
+#: svn/tags/1.1.1/controller/class-wqm-qr-code-type.php:142
+#: svn/tags/1.1/controller/class-wqm-qr-code-type.php:142
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:155
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:155
+#: svn/trunk/controller/class-wqm-qr-code-type.php:155
+msgid "No MeCard/vCard cards found in Trash"
+msgstr "В корзине MeCard/vCard карт не найдено"
+
+#: controller/class-wqm-qr-code-type.php:156
+#: svn/tags/1.0/controller/class-wqm-qr-code-type.php:140
+#: svn/tags/1.1.1/controller/class-wqm-qr-code-type.php:143
+#: svn/tags/1.1/controller/class-wqm-qr-code-type.php:143
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:156
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:156
+#: svn/trunk/controller/class-wqm-qr-code-type.php:156
+msgid "Parent MeCard/vCard card"
+msgstr "Родительская MeCard/vCard карта"
+
+#: controller/class-wqm-qr-code-type.php:189
+#: svn/tags/1.0/controller/class-wqm-qr-code-type.php:173
+#: svn/tags/1.1.1/controller/class-wqm-qr-code-type.php:176
+#: svn/tags/1.1/controller/class-wqm-qr-code-type.php:176
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:189
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:189
+#: svn/trunk/controller/class-wqm-qr-code-type.php:189
+msgid "QR code settings"
+msgstr "Настройки QR кода"
+
+#: controller/class-wqm-qr-code-type.php:197
+#: svn/tags/1.0/controller/class-wqm-qr-code-type.php:181
+#: svn/tags/1.1.1/controller/class-wqm-qr-code-type.php:184
+#: svn/tags/1.1/controller/class-wqm-qr-code-type.php:184
+#: svn/tags/1.2/controller/class-wqm-qr-code-type.php:197
+#: svn/tags/1.3/controller/class-wqm-qr-code-type.php:197
+#: svn/trunk/controller/class-wqm-qr-code-type.php:197
+msgid "Card fields"
+msgstr "Поля карты"
+
+#: controller/class-wqm-widget.php:25
+#: svn/tags/1.0/controller/class-wqm-widget.php:27
+#: svn/tags/1.1.1/controller/class-wqm-widget.php:27
+#: svn/tags/1.1/controller/class-wqm-widget.php:27
+#: svn/tags/1.2/controller/class-wqm-widget.php:25
+#: svn/tags/1.3/controller/class-wqm-widget.php:25
+#: svn/trunk/controller/class-wqm-widget.php:25
+msgid "Load QR code MeCard/vCard as widget"
+msgstr "Вывести QR код MeCard/vCard карты"
+
+#: svn/tags/1.0/views/card-fields-form.php:19
+#: svn/tags/1.1.1/views/card-fields-form.php:19
+#: svn/tags/1.1/views/card-fields-form.php:19
+#: svn/tags/1.2/views/card-fields-form.php:21
+#: svn/tags/1.3/views/card-fields-form.php:21
+#: svn/trunk/views/card-fields-form.php:21 views/card-fields-form.php:21
+msgid "Name"
+msgstr "Имя"
+
+#: svn/tags/1.0/views/card-fields-form.php:23
+#: svn/tags/1.1.1/views/card-fields-form.php:23
+#: svn/tags/1.1/views/card-fields-form.php:23
+#: svn/tags/1.2/views/card-fields-form.php:25
+#: svn/tags/1.3/views/card-fields-form.php:25
+#: svn/trunk/views/card-fields-form.php:25 views/card-fields-form.php:25
+msgid ""
+"A structured representation of the name of the person. When a field is "
+"divided by a comma (,), the first half is treated as the last name and the "
+"second half is treated as the first name."
+msgstr ""
+"Структурированное представление имени. Когда поле разделяется запятой (,), "
+"первая половина обрабатывается как фамилия, а вторая половина - как имя."
+
+#: svn/tags/1.0/views/card-fields-form.php:27
+#: svn/tags/1.1.1/views/card-fields-form.php:27
+#: svn/tags/1.1/views/card-fields-form.php:27
+#: svn/tags/1.2/views/card-fields-form.php:29
+#: svn/tags/1.3/views/card-fields-form.php:29
+#: svn/trunk/views/card-fields-form.php:29 views/card-fields-form.php:29
+msgid "Nickname"
+msgstr "Никнейм"
+
+#: svn/tags/1.0/views/card-fields-form.php:31
+#: svn/tags/1.1.1/views/card-fields-form.php:31
+#: svn/tags/1.1/views/card-fields-form.php:31
+#: svn/tags/1.2/views/card-fields-form.php:33
+#: svn/tags/1.3/views/card-fields-form.php:33
+#: svn/trunk/views/card-fields-form.php:33 views/card-fields-form.php:33
+msgid "Familiar name for the object represented by this MeCard/vCard."
+msgstr "Имя для объекта, форматированное для MeCard / vCard."
+
+#: svn/tags/1.0/views/card-fields-form.php:35
+#: svn/tags/1.1.1/views/card-fields-form.php:35
+#: svn/tags/1.1/views/card-fields-form.php:35
+#: svn/tags/1.2/views/card-fields-form.php:37
+#: svn/tags/1.3/views/card-fields-form.php:37
+#: svn/trunk/views/card-fields-form.php:37 views/card-fields-form.php:37
+msgid "Sound"
+msgstr "Звучание"
+
+#: svn/tags/1.0/views/card-fields-form.php:39
+#: svn/tags/1.1.1/views/card-fields-form.php:39
+#: svn/tags/1.1/views/card-fields-form.php:39
+#: svn/tags/1.2/views/card-fields-form.php:41
+#: svn/tags/1.3/views/card-fields-form.php:41
+#: svn/trunk/views/card-fields-form.php:41 views/card-fields-form.php:41
+msgid ""
+"Designates a text string to be set as the kana name in the phonebook. When a "
+"field is divided by a comma (,), the first half is treated as the last name "
+"and the second half is treated as the first name."
+msgstr ""
+"Текстовая строка, которая будет установлена как имя кана(можно написание на "
+"английском) в телефонной книге. Когда поле разделяется запятой (,), первая "
+"половина обрабатывается как фамилия, а вторая половина - как имя."
+
+#: svn/tags/1.0/views/card-fields-form.php:43
+#: svn/tags/1.1.1/views/card-fields-form.php:43
+#: svn/tags/1.1/views/card-fields-form.php:43
+#: svn/tags/1.2/views/card-fields-form.php:45
+#: svn/tags/1.3/views/card-fields-form.php:45
+#: svn/trunk/views/card-fields-form.php:45 views/card-fields-form.php:45
+msgid "Phone"
+msgstr "Телефон"
+
+#: svn/tags/1.0/views/card-fields-form.php:47
+#: svn/tags/1.1.1/views/card-fields-form.php:47
+#: svn/tags/1.1/views/card-fields-form.php:47
+#: svn/tags/1.2/views/card-fields-form.php:49
+#: svn/tags/1.3/views/card-fields-form.php:49
+#: svn/trunk/views/card-fields-form.php:49 views/card-fields-form.php:49
+msgid ""
+"The canonical number string for a telephone number for telephony "
+"communication."
+msgstr "Основной номер телефона для телефонной книги смартфона."
+
+#: svn/tags/1.0/views/card-fields-form.php:51
+#: svn/tags/1.1.1/views/card-fields-form.php:51
+#: svn/tags/1.1/views/card-fields-form.php:51
+#: svn/tags/1.2/views/card-fields-form.php:53
+#: svn/tags/1.3/views/card-fields-form.php:53
+#: svn/trunk/views/card-fields-form.php:53 views/card-fields-form.php:53
+msgid "Videophone"
+msgstr "Видеовызов"
+
+#: svn/tags/1.0/views/card-fields-form.php:55
+#: svn/tags/1.1.1/views/card-fields-form.php:55
+#: svn/tags/1.1/views/card-fields-form.php:55
+#: svn/tags/1.2/views/card-fields-form.php:57
+#: svn/tags/1.3/views/card-fields-form.php:57
+#: svn/trunk/views/card-fields-form.php:57 views/card-fields-form.php:57
+msgid "The canonical string for a videophone number communication."
+msgstr "Строка с номером для видео вызова."
+
+#: svn/tags/1.0/views/card-fields-form.php:59
+#: svn/tags/1.1.1/views/card-fields-form.php:59
+#: svn/tags/1.1/views/card-fields-form.php:59
+#: svn/tags/1.2/views/card-fields-form.php:61
+#: svn/tags/1.3/views/card-fields-form.php:61
+#: svn/trunk/views/card-fields-form.php:61 views/card-fields-form.php:61
+msgid "Email"
+msgstr "Email"
+
+#: svn/tags/1.0/views/card-fields-form.php:64
+#: svn/tags/1.1.1/views/card-fields-form.php:64
+#: svn/tags/1.1/views/card-fields-form.php:64
+#: svn/tags/1.2/views/card-fields-form.php:66
+#: svn/tags/1.3/views/card-fields-form.php:66
+#: svn/trunk/views/card-fields-form.php:66 views/card-fields-form.php:66
+msgid "The address for electronic mail communication."
+msgstr "Адрес электронной почты для связи."
+
+#: svn/tags/1.0/views/card-fields-form.php:68
+#: svn/tags/1.1.1/views/card-fields-form.php:68
+#: svn/tags/1.1/views/card-fields-form.php:68
+#: svn/tags/1.2/views/card-fields-form.php:70
+#: svn/tags/1.3/views/card-fields-form.php:70
+#: svn/trunk/views/card-fields-form.php:70 views/card-fields-form.php:70
+msgid "Address"
+msgstr "Адрес"
+
+#: svn/tags/1.0/views/card-fields-form.php:73
+#: svn/tags/1.1.1/views/card-fields-form.php:73
+#: svn/tags/1.1/views/card-fields-form.php:73
+#: svn/tags/1.2/views/card-fields-form.php:75
+#: svn/tags/1.3/views/card-fields-form.php:75
+#: svn/trunk/views/card-fields-form.php:75 views/card-fields-form.php:75
+msgid ""
+"The physical delivery address. The fields divided by commas (,) denote PO "
+"box, room number, house number, city, prefecture, zip code and country, in "
+"order."
+msgstr ""
+"Физический адрес. Поле, разделенное запятыми (,), обозначают почтовый ящик, "
+"номер комнаты, номер дома, город, префектуру, почтовый индекс и страну по "
+"порядку."
+
+#: svn/tags/1.0/views/card-fields-form.php:77
+#: svn/tags/1.1.1/views/card-fields-form.php:77
+#: svn/tags/1.1/views/card-fields-form.php:77
+#: svn/tags/1.2/views/card-fields-form.php:79
+#: svn/tags/1.3/views/card-fields-form.php:79
+#: svn/trunk/views/card-fields-form.php:79 views/card-fields-form.php:79
+msgid "Birthday"
+msgstr "День рождения"
+
+#: svn/tags/1.0/views/card-fields-form.php:81
+#: svn/tags/1.1.1/views/card-fields-form.php:81
+#: svn/tags/1.1/views/card-fields-form.php:81
+#: svn/tags/1.2/views/card-fields-form.php:83
+#: svn/tags/1.3/views/card-fields-form.php:83
+#: svn/trunk/views/card-fields-form.php:83 views/card-fields-form.php:83
+msgid ""
+"8 digits for date of birth: year (4 digits), month (2 digits) and day (2 "
+"digits), in order."
+msgstr ""
+"8 цифр даты рождения: год (4 цифры), месяц (2 цифры) и день (2 цифры), по "
+"порядку."
+
+#: svn/tags/1.0/views/card-fields-form.php:89
+#: svn/tags/1.1.1/views/card-fields-form.php:89
+#: svn/tags/1.1/views/card-fields-form.php:89
+#: svn/tags/1.2/views/card-fields-form.php:91
+#: svn/tags/1.3/views/card-fields-form.php:91
+#: svn/trunk/views/card-fields-form.php:91 views/card-fields-form.php:91
+msgid "Position held in organization."
+msgstr "Должность занимаемая в организации."
+
+#: svn/tags/1.0/views/card-fields-form.php:93
+#: svn/tags/1.1.1/views/card-fields-form.php:93
+#: svn/tags/1.1/views/card-fields-form.php:93
+#: svn/tags/1.2/views/card-fields-form.php:95
+#: svn/tags/1.3/views/card-fields-form.php:95
+#: svn/trunk/views/card-fields-form.php:95 views/card-fields-form.php:95
+msgid "Organization"
+msgstr "Организация"
+
+#: svn/tags/1.0/views/card-fields-form.php:97
+#: svn/tags/1.1.1/views/card-fields-form.php:97
+#: svn/tags/1.1/views/card-fields-form.php:97
+#: svn/tags/1.2/views/card-fields-form.php:99
+#: svn/tags/1.3/views/card-fields-form.php:99
+#: svn/trunk/views/card-fields-form.php:99 views/card-fields-form.php:99
+msgid "Organization name."
+msgstr "Название организации."
+
+#: svn/tags/1.0/views/card-fields-form.php:101
+#: svn/tags/1.1.1/views/card-fields-form.php:101
+#: svn/tags/1.1/views/card-fields-form.php:101
+#: svn/tags/1.2/views/card-fields-form.php:103
+#: svn/tags/1.3/views/card-fields-form.php:103
+#: svn/trunk/views/card-fields-form.php:103 views/card-fields-form.php:103
+msgid "Url"
+msgstr "Адрес сайта"
+
+#: svn/tags/1.0/views/card-fields-form.php:105
+#: svn/tags/1.1.1/views/card-fields-form.php:105
+#: svn/tags/1.1/views/card-fields-form.php:105
+#: svn/tags/1.2/views/card-fields-form.php:107
+#: svn/tags/1.3/views/card-fields-form.php:107
+#: svn/trunk/views/card-fields-form.php:107 views/card-fields-form.php:107
+msgid "A URL pointing to a website that represents the person in some way."
+msgstr ""
+"URL-адрес, указывающий на веб-сайт, который каким-либо образом представляет "
+"человека."
+
+#: svn/tags/1.0/views/card-fields-form.php:109
+#: svn/tags/1.1.1/views/card-fields-form.php:109
+#: svn/tags/1.1/views/card-fields-form.php:109
+#: svn/tags/1.2/views/card-fields-form.php:111
+#: svn/tags/1.3/views/card-fields-form.php:111
+#: svn/trunk/views/card-fields-form.php:111 views/card-fields-form.php:111
+msgid "Note"
+msgstr "Заметка"
+
+#: svn/tags/1.0/views/card-fields-form.php:113
+#: svn/tags/1.1.1/views/card-fields-form.php:113
+#: svn/tags/1.1/views/card-fields-form.php:113
+#: svn/tags/1.2/views/card-fields-form.php:115
+#: svn/tags/1.3/views/card-fields-form.php:115
+#: svn/trunk/views/card-fields-form.php:115 views/card-fields-form.php:115
+msgid "Specifies supplemental information to be set as memo in the phonebook."
+msgstr ""
+"Определяет дополнительную информацию, которая будет установлена как памятка "
+"в телефонной книге."
+
+#: svn/tags/1.0/views/requirements-error.php:2
+#: svn/tags/1.1.1/views/requirements-error.php:2
+#: svn/tags/1.1/views/requirements-error.php:2
+#: svn/tags/1.2/views/requirements-error.php:5
+#: svn/tags/1.3/views/requirements-error.php:5
+#: svn/trunk/views/requirements-error.php:5 views/requirements-error.php:5
+msgid ""
+"error: Your environment doesn't meet all of the system requirements listed "
+"below."
+msgstr ""
+"ошибка: Ваше программное окружение не соответствует системным требованиям "
+"описным ниже."
+
+#: svn/tags/1.0/views/requirements-error.php:7
+#: svn/tags/1.0/views/requirements-error.php:12
+#: svn/tags/1.1.1/views/requirements-error.php:7
+#: svn/tags/1.1.1/views/requirements-error.php:12
+#: svn/tags/1.1/views/requirements-error.php:7
+#: svn/tags/1.1/views/requirements-error.php:12
+#: svn/tags/1.2/views/requirements-error.php:10
+#: svn/tags/1.2/views/requirements-error.php:15
+#: svn/tags/1.3/views/requirements-error.php:10
+#: svn/tags/1.3/views/requirements-error.php:15
+#: svn/trunk/views/requirements-error.php:10
+#: svn/trunk/views/requirements-error.php:15 views/requirements-error.php:10
+#: views/requirements-error.php:15
+msgid "You're running version"
+msgstr "У вас установлена версия"
+
+#: svn/tags/1.0/views/requirements-error.php:16
+#: svn/tags/1.1.1/views/requirements-error.php:16
+#: svn/tags/1.1/views/requirements-error.php:16
+#: svn/tags/1.2/views/requirements-error.php:19
+#: svn/tags/1.3/views/requirements-error.php:19
+#: svn/trunk/views/requirements-error.php:19 views/requirements-error.php:19
+msgid ""
+"If you need to upgrade your version of PHP you can ask your hosting company "
+"for assistance, and if you need help upgrading WordPress you can refer to the"
+msgstr ""
+"Если вам нужно обновить версию PHP, вы можете обратиться за помощью к вашему "
+"хостингу, а если вам нужна помощь в обновлении WordPress, вы можете "
+"обратиться к"
+
+#: svn/tags/1.0/views/settings-form.php:15
+#: svn/tags/1.1.1/views/settings-form.php:23
+#: svn/tags/1.1/views/settings-form.php:23
+#: svn/tags/1.2/views/settings-form.php:27
+#: svn/tags/1.3/views/settings-form.php:27 svn/trunk/views/settings-form.php:27
+#: views/settings-form.php:27
+msgid "Type"
+msgstr "Тип карты"
+
+#: svn/tags/1.0/views/settings-form.php:21
+#: svn/tags/1.1.1/views/settings-form.php:29
+#: svn/tags/1.1/views/settings-form.php:29
+#: svn/tags/1.2/views/settings-form.php:33
+#: svn/tags/1.3/views/settings-form.php:33 svn/trunk/views/settings-form.php:33
+#: views/settings-form.php:33
+msgid "Select contact information QR code format"
+msgstr "Выберите формат контактной информации для QR кода"
+
+#: svn/tags/1.0/views/settings-form.php:25
+#: svn/tags/1.1.1/views/settings-form.php:33
+#: svn/tags/1.1/views/settings-form.php:33
+#: svn/tags/1.2/views/settings-form.php:37
+#: svn/tags/1.3/views/settings-form.php:37 svn/trunk/views/settings-form.php:37
+#: views/settings-form.php:37
+msgid "Margin"
+msgstr "Окантовка"
+
+#: svn/tags/1.0/views/settings-form.php:29
+#: svn/tags/1.1.1/views/settings-form.php:37
+#: svn/tags/1.1/views/settings-form.php:37
+#: svn/tags/1.2/views/settings-form.php:41
+#: svn/tags/1.3/views/settings-form.php:41 svn/trunk/views/settings-form.php:41
+#: views/settings-form.php:41
+msgid "Specify border size around QR code in px"
+msgstr "Укажите размер рамки вокруг QR кода в пикселях"
+
+#: svn/tags/1.0/views/settings-form.php:34
+#: svn/tags/1.1.1/views/settings-form.php:42
+#: svn/tags/1.1/views/settings-form.php:42
+#: svn/tags/1.2/views/settings-form.php:46
+#: svn/tags/1.3/views/settings-form.php:46 svn/trunk/views/settings-form.php:46
+#: views/settings-form.php:46
+msgid "Correction level"
+msgstr "Уровень коррекции"
+
+#: svn/tags/1.0/views/settings-form.php:39
+#: svn/tags/1.1.1/views/settings-form.php:47
+#: svn/tags/1.1/views/settings-form.php:47
+#: svn/tags/1.2/views/settings-form.php:51
+#: svn/tags/1.3/views/settings-form.php:51 svn/trunk/views/settings-form.php:51
+#: views/settings-form.php:51
+#, php-format
+msgid "Level L – up to 7% damage"
+msgstr "Уровень L - до 7% повреждений"
+
+#: svn/tags/1.0/views/settings-form.php:42
+#: svn/tags/1.1.1/views/settings-form.php:50
+#: svn/tags/1.1/views/settings-form.php:50
+#: svn/tags/1.2/views/settings-form.php:54
+#: svn/tags/1.3/views/settings-form.php:54 svn/trunk/views/settings-form.php:54
+#: views/settings-form.php:54
+#, php-format
+msgid "Level M – up to 15% damage"
+msgstr "Уровень M - до 15% повреждений"
+
+#: svn/tags/1.0/views/settings-form.php:45
+#: svn/tags/1.1.1/views/settings-form.php:53
+#: svn/tags/1.1/views/settings-form.php:53
+#: svn/tags/1.2/views/settings-form.php:57
+#: svn/tags/1.3/views/settings-form.php:57 svn/trunk/views/settings-form.php:57
+#: views/settings-form.php:57
+#, php-format
+msgid "Level Q – up to 25% damage"
+msgstr "Уровень Q - до 25% повреждений"
+
+#: svn/tags/1.0/views/settings-form.php:48
+#: svn/tags/1.1.1/views/settings-form.php:56
+#: svn/tags/1.1/views/settings-form.php:56
+#: svn/tags/1.2/views/settings-form.php:60
+#: svn/tags/1.3/views/settings-form.php:60 svn/trunk/views/settings-form.php:60
+#: views/settings-form.php:60
+#, php-format
+msgid "Level H – up to 30% damage"
+msgstr "Уровень H - до 30% повреждений"
+
+#: svn/tags/1.0/views/settings-form.php:51
+#: svn/tags/1.1.1/views/settings-form.php:59
+#: svn/tags/1.1/views/settings-form.php:59
+#: svn/tags/1.2/views/settings-form.php:63
+#: svn/tags/1.3/views/settings-form.php:63 svn/trunk/views/settings-form.php:63
+#: views/settings-form.php:63
+msgid ""
+"There are different amounts of “backup” data depending on how much damage "
+"the QR code is expected to suffer in its intended environment."
+msgstr ""
+"Существуют разные объемы «резервных» данных, в зависимости от того, какой "
+"ущерб должен нанести QR-код в предполагаемой среде."
+
+#: svn/tags/1.0/views/settings-form.php:55
+#: svn/tags/1.1.1/views/settings-form.php:63
+#: svn/tags/1.1/views/settings-form.php:63
+#: svn/tags/1.2/views/settings-form.php:67
+#: svn/tags/1.3/views/settings-form.php:67 svn/trunk/views/settings-form.php:67
+#: views/settings-form.php:67
+msgid "Label"
+msgstr "Метка"
+
+#: svn/tags/1.0/views/settings-form.php:59
+#: svn/tags/1.1.1/views/settings-form.php:67
+#: svn/tags/1.1/views/settings-form.php:67
+#: svn/tags/1.2/views/settings-form.php:71
+#: svn/tags/1.3/views/settings-form.php:71 svn/trunk/views/settings-form.php:71
+#: views/settings-form.php:71
+msgid "Optional text label below QR code."
+msgstr "Опциональная метка которая будет выводиться под QR кодом."
+
+#: svn/tags/1.0/views/widget-config.php:17
+#: svn/tags/1.1.1/views/widget-config.php:17
+#: svn/tags/1.1/views/widget-config.php:17
+#: svn/tags/1.2/views/widget-config.php:19
+#: svn/tags/1.3/views/widget-config.php:21 svn/trunk/views/widget-config.php:21
+#: views/widget-config.php:21
+msgid "Card"
+msgstr "Карта"
+
+#: svn/tags/1.0/views/widget-config.php:21
+#: svn/tags/1.1.1/views/widget-config.php:21
+#: svn/tags/1.1/views/widget-config.php:21
+#: svn/tags/1.2/views/widget-config.php:23
+#: svn/tags/1.3/views/widget-config.php:26 svn/trunk/views/widget-config.php:26
+#: views/widget-config.php:26
+msgid "Select card"
+msgstr "Выберите карту"
+
+#: svn/tags/1.0/views/widget-config.php:27
+#: svn/tags/1.1.1/views/widget-config.php:27
+#: svn/tags/1.1/views/widget-config.php:27
+#: svn/tags/1.2/views/widget-config.php:29
+#: svn/tags/1.3/views/widget-config.php:32 svn/trunk/views/widget-config.php:32
+#: views/widget-config.php:32
+msgid "Please select MeCard/vCard QR code card"
+msgstr "Выберите карту с MeCard/vCard QR кодом"
+
+#: svn/tags/1.1.1/views/settings-form.php:71
+#: svn/tags/1.1/views/settings-form.php:71
+#: svn/tags/1.2/views/settings-form.php:75
+#: svn/tags/1.3/views/settings-form.php:75 svn/trunk/views/settings-form.php:75
+#: views/settings-form.php:75
+msgid "Logo"
+msgstr "Логотип"
+
+#: svn/tags/1.1.1/views/settings-form.php:77
+#: svn/tags/1.1.1/views/settings-form.php:111
+#: svn/tags/1.1.1/views/settings-form.php:121
+#: svn/tags/1.1/views/settings-form.php:77
+#: svn/tags/1.1/views/settings-form.php:111
+#: svn/tags/1.1/views/settings-form.php:121
+#: svn/tags/1.2/views/settings-form.php:81
+#: svn/tags/1.2/views/settings-form.php:117
+#: svn/tags/1.2/views/settings-form.php:127
+#: svn/tags/1.3/views/settings-form.php:81
+#: svn/tags/1.3/views/settings-form.php:117
+#: svn/tags/1.3/views/settings-form.php:127
+#: svn/trunk/views/settings-form.php:81 svn/trunk/views/settings-form.php:117
+#: svn/trunk/views/settings-form.php:127 views/settings-form.php:81
+#: views/settings-form.php:117 views/settings-form.php:127
+msgid "Select logo image"
+msgstr "Выберите логотип"
+
+#: svn/tags/1.1.1/views/settings-form.php:80
+#: svn/tags/1.1/views/settings-form.php:80
+#: svn/tags/1.2/views/settings-form.php:84
+#: svn/tags/1.3/views/settings-form.php:84 svn/trunk/views/settings-form.php:84
+#: views/settings-form.php:84
+msgid "Delete logo image"
+msgstr "Удалить логотип"
+
+#: svn/tags/1.1.1/views/settings-form.php:81
+#: svn/tags/1.1/views/settings-form.php:81
+#: svn/tags/1.2/views/settings-form.php:85
+#: svn/tags/1.3/views/settings-form.php:85 svn/trunk/views/settings-form.php:85
+#: views/settings-form.php:85
+msgid "Optional logo image at center of QR code."
+msgstr "Логотип, по центру QR кода, опционально."
+
+#: svn/tags/1.1.1/views/settings-form.php:85
+#: svn/tags/1.1/views/settings-form.php:85
+#: svn/tags/1.2/views/settings-form.php:89
+#: svn/tags/1.3/views/settings-form.php:89 svn/trunk/views/settings-form.php:89
+#: views/settings-form.php:89
+msgid "Logo size"
+msgstr "Размеры логотипа"
+
+#: svn/tags/1.1.1/views/settings-form.php:89
+#: svn/tags/1.1/views/settings-form.php:89
+#: svn/tags/1.2/views/settings-form.php:93
+#: svn/tags/1.3/views/settings-form.php:93 svn/trunk/views/settings-form.php:93
+#: views/settings-form.php:93
+msgid "width"
+msgstr "ширина"
+
+#: svn/tags/1.1.1/views/settings-form.php:92
+#: svn/tags/1.1/views/settings-form.php:92
+#: svn/tags/1.2/views/settings-form.php:96
+#: svn/tags/1.3/views/settings-form.php:96 svn/trunk/views/settings-form.php:96
+#: views/settings-form.php:96
+msgid "height"
+msgstr "высота"
+
+#: svn/tags/1.1.1/views/settings-form.php:95
+#: svn/tags/1.1/views/settings-form.php:95
+#: svn/tags/1.2/views/settings-form.php:99
+#: svn/tags/1.3/views/settings-form.php:99 svn/trunk/views/settings-form.php:99
+#: views/settings-form.php:99
+msgid "Set logo image size in pixels or percents."
+msgstr "Укажите размеры логотипа, можно в пикселях и процентах"
+
+#: svn/tags/1.3/views/widget-config.php:39 svn/trunk/views/widget-config.php:39
+#: views/widget-config.php:39
+msgid "Just show QR Code"
+msgstr "Просто показывать QR код"
+
+#: svn/tags/1.3/views/widget-config.php:46 svn/trunk/views/widget-config.php:46
+#: views/widget-config.php:46
+msgid "Allow save QR Code on click"
+msgstr "Разрешить сохранять QR код при клике"
+
+#: svn/tags/1.3/views/widget-config.php:53 svn/trunk/views/widget-config.php:53
+#: views/widget-config.php:53
+msgid "Allow open vCard on click"
+msgstr "Разрешить открывать данные QR кода при клике"
+
+#. Plugin Name of the plugin/theme
+msgid "QR code MeCard/vCard generator"
+msgstr "Генератор MeCard/vCard QR кода"
+
+#. Plugin URI of the plugin/theme
+msgid "https://web-marshal.ru/qr-code-mecard-vcard-generator/"
+msgstr "https://web-marshal.ru/qr-code-mecard-vcard-generator/"
+
+#. Description of the plugin/theme
+msgid ""
+"Share your contact information such as emails, phone number and much more "
+"through QR code with Wordpress using shortcode, widget or by direct link."
+msgstr ""
+"Делитесь контактной информацией, такой как email, номер телефона и многое "
+"другое через QR-код в Wordpress, используя шорткод, виджет или по прямой "
+"ссылке."
+
+#. Author of the plugin/theme
+msgid "Stanislav Kuznetsov"
+msgstr "Станислав Кузнецов"
+
+#. Author URI of the plugin/theme
+msgid "https://www.linkedin.com/in/stasionok/"
+msgstr "https://www.linkedin.com/in/stasionok/"

@@ -1,0 +1,87 @@
+<div class="col-md-3">
+  <br>
+  <div class="card" >
+    <div class="card-wrapper">
+      <div class="row wrapper-top">
+      <div class="col-lg-4">
+        <img class="card-img-top img-fluid" src="<?php echo $photo = ($vcard->photo !== "") ? site_url('upload/'.$vcard->photo) :  site_url('images/profile.png'); ?>" alt="Card image cap">
+      </div>
+      <div class="col-lg-8 info">
+        <p class="social">
+          <a href="https://facebook.com/manishankarvakta" title="https://facebook.com/manishankarvakta" target="_blank" >
+            <i class="fa fa-facebook-square fa-fw fb"></i>
+          </a>
+          <a href="https://facebook.com/manishankarvakta" title="https://facebook.com/manishankarvakta" target="_blank" >
+            <i class="fa fa-twitter fa-fw tw"></i>
+          </a>
+          <a href="https://facebook.com/manishankarvakta" title="https://facebook.com/manishankarvakta" target="_blank" >
+            <i class="fa fa-skype fa-fw sp"></i>
+          </a>
+          <a href="https://facebook.com/manishankarvakta" title="https://facebook.com/manishankarvakta" target="_blank" >
+            <i class="fa fa-linkedin fa-fw in"></i>
+          </a>
+
+
+
+        </p>
+        <h5 class="card-title"><?php echo $vcard->name; ?></h5>
+        <?php $com = unserialize($vcard->company_name);  ?>
+        <?php
+           $i = 0;
+          foreach ($com as $key => $value):
+             if ($i == 0):
+               if ($value != ''): ?>
+               <h6 class="desi"><?php echo $value; ?> <strong class="com"> <?php echo $key; ?></strong></h6>
+            <?php
+              else: ?>
+              <h6 class="desi"><i class="la la-warning"></i> No Company Info</h6>
+        <?php
+      endif;
+            endif;
+          $i++;
+        endforeach; ?>
+        <hr class="divider">
+      </div>
+    </div>
+    <div class="row wrapper-bottom">
+      <div class="col-lg-12">
+        <p class="phn_holder">
+        <?php $phn = unserialize($vcard->phone);  ?>
+        <?php
+           $i = 0;
+          foreach ($phn as $key => $value):
+            if ($i <= 2):
+               if ($value != ''): ?>
+               <?php echo $this->vcard_m->phn_icon($key); ?><?php echo ' '.$value.' '; ?>
+              <?php
+                else: ?>
+                No phone Number Found
+              <?php  endif;
+               endif;
+          $i++;
+        endforeach; ?>
+        </p>
+        <?php $email = unserialize($vcard->email);  ?>
+        <?php
+           $i = 0;
+          foreach ($email as $key => $value):
+            if ($i === 0):
+               if ($value != ''): ?>
+               <p class="email">manishankarvakta@gmail.com</p>
+              <?php
+                else: ?>
+                <p class="email">No Email Found</p>
+              <?php  endif;
+               endif;
+          $i++;
+        endforeach; ?>
+      </div>
+    </div>
+    <img class="img-bottom" src="<?php echo site_url('images/img-bottom.png'); ?>" alt="">
+    </div>
+    <div class="card-block">
+      <hr class="divider">
+      <button type="button" onclick="viewProfile(<?php echo $vcard->id; ?>)" class="btn btn-outline-info">View More</button>
+    </div>
+  </div>
+</div>

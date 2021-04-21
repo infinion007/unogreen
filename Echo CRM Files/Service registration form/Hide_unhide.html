@@ -1,0 +1,38 @@
+<style>
+  #hidden_div
+  {
+  display: none;
+  }        
+</style>
+
+
+<select id="test" name="form_select" onchange="showDiv('hidden_div', this)">
+  <option value="0">New Form</option>
+  <option value="1">Back Dated</option>
+ </select>
+ <div id="hidden_div">Select Date<br>
+ <input name="back_date" type="date" placeholder="Select Date" class="form-control input-md" required="">
+</div>
+
+<br>
+<br>
+<br>
+
+<select id="test" name="form_select" onchange="showDiv('hidden_div', this)">
+  <option value="0">New GMB</option>
+  <option value="1">Existing GMB</option>
+ </select>
+ <div id="hidden_div">Enter Link<br>
+  <input id="gmb_page_url" name="gmb_page_url" type="url" placeholder="GMB Profile Link" class="form-control input-md" required="">
+</div>
+
+
+
+
+
+<script>
+  function showDiv(divId, element)
+  {
+    document.getElementById(divId).style.display = element.value == 1 ? 'block' : 'none';
+  }
+  </script>

@@ -1,0 +1,599 @@
+
+<html>
+    <head>   
+		<style>
+			#hidden_div
+			{
+			display: none;
+			}        
+		</style>
+    </head>
+    <body>
+        <form class="form-horizontal">
+            <fieldset>
+            
+            <!-- Form Name -->
+            <legend>GSV Service Registration</legend>
+
+            <!-- Multiple Radios -->
+			<select id="test" name="form_select" onchange="showDiv('hidden_div', this)">
+				<option value="0">New Form</option>
+				<option value="1">Back Dated</option>
+			 </select>
+			 <div id="hidden_div">Select Date<br>
+			 <input name="back_date" type="date" placeholder="Select Date" class="form-control input-md" required="">
+			</div>
+            
+            <!-- Text input-->
+            <div id="hidden_div" class="form-group">
+            <label class="col-md-4 control-label" for="back_date">Select Date</label>  
+            <div class="col-md-4">
+            <input id="back_date" name="back_date" type="date" placeholder="Select Date" class="form-control input-md" required="">
+                
+            </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+            <label class="col-md-4 control-label" for="contact_name">Contact Name</label>  
+            <div class="col-md-4">
+            <input id="contact_name" name="contact_name" type="text" placeholder="Contact Name" class="form-control input-md" required="">
+                
+            </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+            <label class="col-md-4 control-label" for="trade_company_name">Trade / Company Name</label>  
+            <div class="col-md-4">
+            <input id="trade_company_name" name="trade_company_name" type="text" placeholder="Trade / Company Name" class="form-control input-md" required="">
+                
+            </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+            <label class="col-md-4 control-label" for="Designation">Designation</label>  
+            <div class="col-md-4">
+            <input id="Designation" name="Designation" type="text" placeholder="Designation" class="form-control input-md" required="">
+                
+            </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+            <label class="col-md-4 control-label" for="email_address">Email Address</label>  
+            <div class="col-md-4">
+            <input id="email_address" name="email_address" type="email" placeholder="Email Address" class="form-control input-md" required="">
+                
+            </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+				<label class="col-md-4 control-label" for="select_state">State</label>  
+  				<div class="col-md-4">
+                <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required></select>             
+            </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+            <label class="col-md-4 control-label" for="company_city">City</label>  
+            <div class="col-md-4">
+			<select id ="state" class="form-control" required></select>
+                
+            </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+            <label class="col-md-4 control-label" for="address1">Address Line 1</label>  
+            <div class="col-md-4">
+            <input id="address1" name="address1" type="text" placeholder="Address Line 1" class="form-control input-md" required="">
+                
+            </div>
+            </div>
+            
+            <!-- Search input-->
+            <div class="form-group">
+            <label class="col-md-4 control-label" for="address2">Address Line 2</label>
+            <div class="col-md-4">
+                <input id="address2" name="address2" type="search" placeholder="Address Line 2" class="form-control input-md" required="">
+                
+            </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+            <label class="col-md-4 control-label" for="company_zipcode">Zip code</label>  
+            <div class="col-md-4">
+            <input id="company_zipcode" name="company_zipcode" type="tel" placeholder="Zip code" class="form-control input-md" maxlength="6" required="">
+
+            </div>
+            </div>
+
+			<!-- Text input-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="contact_number">Contact Number</label>  
+				<div class="col-md-4">
+				<input id="contact_number" name="contact_number" type="tel" placeholder="Contact Number" class="form-control input-md" maxlength="10" required="">
+				
+				</div>
+			</div>
+			
+			<!-- Text input-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="alt_number">Alternate Number</label>  
+				<div class="col-md-4">
+				<input id="alt_number" name="alt_number" type="tel" placeholder="Alternate Number" class="form-control input-md" maxlength="10">
+				
+				</div>
+			</div>
+			
+			<!-- Text input-->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="website">Website</label>  
+				<div class="col-md-4">
+				<input id="website" name="website" type="url" placeholder="Websie" class="form-control input-md">
+				
+				</div>
+			</div>
+
+			<!-- Multiple Radios -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="gmb_page">GMB Page</label>
+				<div class="col-md-4">
+				<div class="radio">
+				  <label for="gmb_page-0">
+					<input type="radio" name="gmb_page" id="gmb_page-0" value="New" checked="checked">
+					New
+				  </label>
+				  </div>
+				<div class="radio">
+				  <label for="gmb_page-1">
+					<input type="radio" name="gmb_page" id="gmb_page-1" value="Existing">
+					Existing
+				  </label>
+				  </div>
+				</div>
+			  </div>
+			  
+			  <!-- Text input-->
+			  <div class="form-group">
+				<label class="col-md-4 control-label" for="gmb_page_url">GMB Profile Link</label>  
+				<div class="col-md-4">
+				<input id="gmb_page_url" name="gmb_page_url" type="url" placeholder="GMB Profile Link" class="form-control input-md" required="">
+				  
+				</div>
+			  </div>
+			  
+			  <!-- Text input-->
+			  <div class="form-group">
+				<label class="col-md-4 control-label" for="tentative_shootdate_1">Tentative Shoot Date 1</label>  
+				<div class="col-md-4">
+				<input id="tentative_shootdate_1" name="tentative_shootdate_1" type="date" placeholder="Tentative Shoot Date 1" class="form-control input-md" required="">
+				  
+				</div>
+			  </div>
+			  
+			  <!-- Text input-->
+			  <div class="form-group">
+				<label class="col-md-4 control-label" for="tentative_shootdate_2">Tentative Shoot Date 2</label>  
+				<div class="col-md-4">
+				<input id="tentative_shootdate_2" name="tentative_shootdate_2" type="date" placeholder="Tentative Shoot Date 2" class="form-control input-md" required="">
+				  
+				</div>
+			  </div>
+			  
+			  <!-- Text input-->
+			  <div class="form-group">
+				<label class="col-md-4 control-label" for="ba_city">BA City</label>  
+				<div class="col-md-4">
+				<input id="ba_city" name="ba_city" type="text" placeholder="BA City" class="form-control input-md" required="">
+				  
+				</div>
+			  </div>
+
+			  <!-- Text input-->
+			  <div class="form-group">
+				<label class="col-md-4 control-label" for="ba_office_code">BA Office Code</label>  
+				<div class="col-md-4">
+				<input id="ba_office_code" name="ba_office_code" type="text" placeholder="BA Office Code" class="form-control input-md" required="">
+				  
+				</div>
+			  </div>
+
+			  <!-- Text input-->
+			  <div class="form-group">
+				<label class="col-md-4 control-label" for="ba_code">BA Code</label>  
+				<div class="col-md-4">
+				<input id="ba_code" name="ba_code" type="text" placeholder="BA Code" class="form-control input-md" required="">
+				  
+				</div>
+			  </div>
+			  
+			  <!-- Text input-->
+			  <div class="form-group">
+				<label class="col-md-4 control-label" for="ba_name">BA Name</label>  
+				<div class="col-md-4">
+				<input id="ba_name" name="ba_name" type="text" placeholder="BA Name" class="form-control input-md" required="">
+				  
+				</div>
+			  </div>
+			  
+			  <!-- Text input-->
+			  <div class="form-group">
+				<label class="col-md-4 control-label" for="ba_pancard">BA Pan Card</label>  
+				<div class="col-md-4">
+				<input id="ba_pancard" name="ba_pancard" type="text" placeholder="BA Pan Card" class="form-control input-md" required="">
+				  
+				</div>
+			  </div>
+			  
+			  <!-- Textarea -->
+			  <div class="form-group">
+				<label class="col-md-4 control-label" for="photography_instructions">Photography Instructions</label>
+				<div class="col-md-4">                     
+				  <textarea class="form-control" id="photography_instructions" name="photography_instructions"></textarea>
+				</div>
+			  </div>
+
+			   <!-- Multiple Checkboxes -->
+			   <div class="form-group">
+                <label class="col-md-4 control-label" for="services_required">Services Required</label>
+                <div class="col-md-4">
+                <div class="checkbox">
+                    <label for="hd-pics">
+                        <input type="checkbox" id="hd-pics" onclick="hdPics()" value="HD Pictures (set of 10 HD pictures with NO EDITS)">
+						HD Pictures (set of 10 HD pictures with NO EDITS)</label> 
+                        <p id="hd-pics-qty" style="display:none">Quantity: <input type="number"></p>
+                </div>
+
+                <div class="checkbox">
+                <label for="gsv">
+                    <input type="checkbox" name="services_required" id="gsv" onclick="gsvP()" value="360° Virtual Tour Photography (Premium)">
+                    360° Virtual Tour Photography (Premium)
+                </label>
+				<p id="gsv-qty" style="display:none">Quantity: <input type="tel"></p>
+                </div>
+                <div class="checkbox">
+                <label for="gsv+">
+                    <input type="checkbox" name="services_required" id="gsv+" onclick="gsvPlus()" value="360° Virtual Tour Photography (Premium Plus)">
+                    360° Virtual Tour Photography (Premium Plus)
+                </label>
+				<p id="gsv+-qty" style="display:none">Quantity: <input type="tel"></p>
+                </div>
+                <div class="checkbox">
+                <label for="2minvids">
+                    <input type="checkbox" name="services_required" id="2minvids" value="2 Minutes Videos">
+                    2 Minutes Videos
+                </label>
+                </div>
+                <div class="checkbox">
+                <label for="food_photo">
+                    <input type="checkbox" name="services_required" id="food_photo" value="Food Photo">
+                    Food Photo
+                </label>
+                </div>
+                <div class="checkbox">
+                <label for="product_photo">
+                    <input type="checkbox" name="services_required" id="product_photo" value="Product / Macro Photography">
+                    Product / Macro Photography
+                </label>
+                </div>
+                <div class="checkbox">
+                <label for="vehicle_photo">
+                    <input type="checkbox" name="services_required" id="vehicle_photo" value="Regular Vehicle Photography">
+                    Regular Vehicle Photography
+                </label>
+                </div>
+                <div class="checkbox">
+                <label for="vehicle_photo+">
+                    <input type="checkbox" name="services_required" id="vehicle_photo+" value="High-End Vehicle Photography">
+                    High-End Vehicle Photography
+                </label>
+                </div>
+                <div class="checkbox">
+                <label for="live_shoot_models">
+                    <input type="checkbox" name="services_required" id="live_shoot_models" value="Live Shoot - With Models Photography">
+                    Live Shoot - With Models Photography
+                </label>
+                </div>
+                <div class="checkbox">
+                <label for="real_estate">
+                    <input type="checkbox" name="services_required" id="real_estate" value="Real Estate &amp; Architecture">
+                    Real Estate &amp; Architecture
+                </label>
+                </div>
+                <div class="checkbox">
+                <label for="Ambience">
+                    <input type="checkbox" name="services_required" id="Ambience" value="Ambience">
+                    Ambience
+                </label>
+                </div>
+                <div class="checkbox">
+                <label for="smm">
+                    <input type="checkbox" name="services_required" id="smm" value="Social Media Marketing">
+                    Social Media Marketing
+                </label>
+                </div>
+                <div class="checkbox">
+                <label for="web_develop">
+                    <input type="checkbox" name="services_required" id="web_develop" value="Web Designing &amp; Development">
+                    Web Designing &amp; Development
+                </label>
+                </div>
+                <div class="checkbox">
+                <label for="brand_design">
+                    <input type="checkbox" name="services_required" id="brand_design" value="Brand Designing">
+                    Brand Designing
+                </label>
+                </div>
+                <div class="checkbox">
+                <label for="seo">
+                    <input type="checkbox" name="services_required" id="seo" value="SEO (Search Engine Optimization)">
+                    SEO (Search Engine Optimization)
+                </label>
+                </div>
+                <div class="checkbox">
+                <label for="content_Writing">
+                    <input type="checkbox" name="services_required" id="content_Writing" value="Content Writing">
+                    Content Writing
+                </label>
+                </div>
+                </div>
+            </div>
+					
+			  <!-- Text input-->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="company_pan_number">Company Pan Number</label>  
+						<div class="col-md-4">
+						<input id="company_pan_number" name="company_pan_number" type="text" placeholder="Company Pan Number" class="form-control input-md" required="">
+						
+						</div>
+					</div>
+					
+			  <!-- Text input-->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="company_gstin_umber">GSTIN Number</label>  
+						<div class="col-md-4">
+						<input id="company_gstin_umber" name="company_gstin_umber" type="text" placeholder="GSTIN Number" class="form-control input-md" required="">
+						
+						</div>
+					</div>
+					
+			  <!-- Text input-->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="name_on_invoice">Invoice Name</label>  
+						<div class="col-md-4">
+						<input id="name_on_invoice" name="name_on_invoice" type="text" placeholder="Invoice Name" class="form-control input-md" required="">
+						
+						</div>
+					</div>
+					
+			  <!-- Text input-->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="add_on_gst">Address On GST</label>  
+						<div class="col-md-4">
+						<input id="add_on_gst" name="add_on_gst" type="text" placeholder="Address On GST" class="form-control input-md" required="">
+						
+						</div>
+					</div>
+					
+			  <!-- File Button --> 
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="photo_of_gst">Photo Of GST Certificate</label>
+						<div class="col-md-4">
+						<input id="photo_of_gst" name="photo_of_gst" class="input-file" type="file">
+						</div>
+					</div>
+					
+			  <!-- Multiple Radios -->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="firm_type">Type Of Firm</label>
+						<div class="col-md-4">
+						<div class="radio">
+						<label for="firm_type-0">
+							<input type="radio" name="firm_type" id="firm_type-0" value="Proprietorship" checked="checked">
+							Proprietorship
+						</label>
+						</div>
+						<div class="radio">
+						<label for="firm_type-1">
+							<input type="radio" name="firm_type" id="firm_type-1" value="Partnership Firm">
+							Partnership Firm
+						</label>
+						</div>
+						<div class="radio">
+						<label for="firm_type-2">
+							<input type="radio" name="firm_type" id="firm_type-2" value="Private Limited">
+							Private Limited
+						</label>
+						</div>
+						<div class="radio">
+						<label for="firm_type-3">
+							<input type="radio" name="firm_type" id="firm_type-3" value="Other">
+							Other
+						</label>
+						</div>
+						</div>
+					</div>
+					
+			  <!-- Text input-->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="gstin_zipcode">Zip Code on GST</label>  
+						<div class="col-md-4">
+						<input id="gstin_zipcode" name="gstin_zipcode" type="text" placeholder="Zip Code on GST" class="form-control input-md" required="">
+						
+						</div>
+					</div>
+					
+			  <!-- Multiple Radios -->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="road_trip">Road Trip</label>
+						<div class="col-md-4">
+						<div class="radio">
+						<label for="road_trip-0">
+							<input type="radio" name="road_trip" id="road_trip-0" value="Yes" checked="checked">
+							Yes
+						</label>
+						</div>
+						<div class="radio">
+						<label for="road_trip-1">
+							<input type="radio" name="road_trip" id="road_trip-1" value="No">
+							No
+						</label>
+						</div>
+						</div>
+					</div>
+					
+			  <!-- Multiple Checkboxes -->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="terms_n_conditions">Terms n Conditions</label>
+						<div class="col-md-4">
+						<div class="checkbox">
+						<label for="terms_n_conditions-0">
+							<input type="checkbox" name="terms_n_conditions" id="terms_n_conditions-0" value="I Agree" required="required">
+							I Agree
+						</label>
+						</div>
+						</div>
+		
+	</div>					
+					<!-- Multiple Radios -->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="payment_method">Payment Method</label>
+					  <div class="col-md-4">
+					  <div class="radio">
+						<label for="payment_method-0">
+						  <input type="radio" name="payment_method" id="payment_method-0" value="Cheque" checked="checked">
+						  Cheque
+						</label>
+						</div>
+					  <div class="radio">
+						<label for="payment_method-1">
+						  <input type="radio" name="payment_method" id="payment_method-1" value="Online">
+						  Online
+						</label>
+						</div>
+					  </div>
+					</div>
+					
+					<!-- Select Basic -->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="cheque_type">Cheque Type</label>
+					  <div class="col-md-4">
+						<select id="cheque_type" name="cheque_type" class="form-control">
+						  <option value="On Date">On Date</option>
+						  <option value="PDC">PDC</option>
+						</select>
+					  </div>
+					</div>
+					
+					<!-- Text input-->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="bank_name">Bank Name</label>  
+					  <div class="col-md-4">
+					  <input id="bank_name" name="bank_name" type="text" placeholder="Bank Name" class="form-control input-md" required="">
+						
+					  </div>
+					</div>
+					
+					<!-- Text input-->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="name_on_cheque">Name on Cheque</label>  
+					  <div class="col-md-4">
+					  <input id="name_on_cheque" name="name_on_cheque" type="text" placeholder="Name on Cheque" class="form-control input-md" required="">
+						
+					  </div>
+					</div>
+					
+					<!-- Text input-->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="cheque_number">Cheque Number</label>  
+					  <div class="col-md-4">
+					  <input id="cheque_number" name="cheque_number" type="tel" placeholder="Cheque Number" class="form-control input-md" maxlength="6" required="">
+						
+					  </div>
+					</div>
+					
+					<!-- Text input-->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="cheque_date">Cheque Date</label>  
+					  <div class="col-md-4">
+					  <input id="cheque_date" name="cheque_date" type="date" placeholder="Cheque Date" class="form-control input-md" required="">
+						
+					  </div>
+					</div>
+					
+					<!-- Text input-->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="cheque_amount">Cheque Amount</label>  
+					  <div class="col-md-4">
+					  <input id="cheque_amount" name="cheque_amount" type="tel" placeholder="Cheque Amount" class="form-control input-md" required="">
+						
+					  </div>
+					</div>
+					
+					<!-- File Button --> 
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="photo_of_cheque">Photo Of Cheque</label>
+					  <div class="col-md-4">
+						<input id="photo_of_cheque" name="photo_of_cheque" class="input-file" type="file">
+					  </div>
+					</div>
+					
+					<!-- Select Basic -->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="merchant_name">Merchant Name</label>
+					  <div class="col-md-4">
+						<select id="merchant_name" name="merchant_name" class="form-control">
+						  <option value="Instamojo">Instamojo</option>
+						  <option value="Google Pay">Google Pay</option>
+						  <option value="Phonepe">Phonepe</option>
+						  <option value="Paytm">Paytm</option>
+						  <option value="Others">Others</option>
+						</select>
+					  </div>
+					</div>
+					
+					<!-- Text input-->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="upi_account_name">UPI / Account Name</label>  
+					  <div class="col-md-4">
+					  <input id="upi_account_name" name="upi_account_name" type="text" placeholder="UPI / Account Name" class="form-control input-md" required="">
+						
+					  </div>
+					</div>
+					
+					<!-- Text input-->
+					<div class="form-group">
+					  <label class="col-md-4 control-label" for="transaction_id">Transaction ID </label>  
+					  <div class="col-md-4">
+					  <input id="transaction_id" name="transaction_id" type="text" placeholder="Transaction ID " class="form-control input-md" required="">
+						
+					  </div>
+					</div>
+				
+					
+					<!-- Button (Double) -->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="submit"></label>
+						<div class="col-md-8">
+							<button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+							<button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+						</div>
+					</div>
+				</fieldset>
+		</form>
+            <script src="service_registration_condition.js"></script>
+            <script language="javascript">print_state("sts");</script>
+			<script>
+				function showDiv(divId, element)
+				{
+					document.getElementById(divId).style.display = element.value == 1 ? 'block' : 'none';
+				}
+				</script>
+</body>
+</html>

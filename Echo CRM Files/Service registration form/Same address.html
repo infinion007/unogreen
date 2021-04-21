@@ -1,0 +1,151 @@
+<!-- Text input-->
+<Form>
+
+<div class="form-group">
+    <label class="col-md-4 control-label" for="select_state">State</label>  
+      <div class="col-md-4">
+    <!-- <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required></select>        -->
+    <input id="shopadd_state" name="address1" type="text" placeholder="State" class="form-control input-md" required="">      
+</div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+<label id="" class="col-md-4 control-label" for="company_city">City</label>  
+<div class="col-md-4">
+<!-- <select id ="state" class="form-control" required></select> -->
+<input id="shopadd_city" name="address1" type="text" placeholder="City" class="form-control input-md" required="">
+    
+</div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+<label id="" class="col-md-4 control-label" for="address1">Address Line 1</label>  
+<div class="col-md-4">
+<input id="shopadd_add1" name="address1" type="text" placeholder="Address Line 1" class="form-control input-md" required="">
+    
+</div>
+</div>
+
+<!-- Search input-->
+<div class="form-group">
+<label id="" class="col-md-4 control-label" for="address2">Address Line 2</label>
+<div class="col-md-4">
+    <input id="shopadd_add2" name="address2" type="search" placeholder="Address Line 2" class="form-control input-md" required="">
+    
+</div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+<label id="" class="col-md-4 control-label" for="company_zipcode">Zip code</label>  
+<div class="col-md-4">
+<input id="shopadd_zip" name="company_zipcode" type="tel" placeholder="Zip code" class="form-control input-md" maxlength="6" required="">
+
+</div>
+</div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<input type="checkbox" name="filladdress" onclick="fillAddress()" /> Present address same as parmanent address.<br />
+
+<div class="form-group">
+    <label class="col-md-4 control-label" for="select_state">State</label>  
+      <div class="col-md-4">
+    <!-- <select onchange="print_city('state', this.selectedIndex);" id="sts" name ="stt" class="form-control" required></select>        -->
+    <input id="billadd_state" name="address1" type="text" placeholder="State" class="form-control input-md" required="">      
+</div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+<label id="" class="col-md-4 control-label" for="company_city">City</label>  
+<div class="col-md-4">
+<!-- <select id ="state" class="form-control" required></select> -->
+<input id="billadd_city" name="address1" type="text" placeholder="City" class="form-control input-md" required="">
+    
+</div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+<label id="" class="col-md-4 control-label" for="address1">Address Line 1</label>  
+<div class="col-md-4">
+<input id="billadd_add1" name="address1" type="text" placeholder="Address Line 1" class="form-control input-md" required="">
+    
+</div>
+</div>
+
+<!-- Search input-->
+<div class="form-group">
+<label id="" class="col-md-4 control-label" for="address2">Address Line 2</label>
+<div class="col-md-4">
+    <input id="billadd_add2" name="address2" type="search" placeholder="Address Line 2" class="form-control input-md" required="">
+    
+</div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+<label id="" class="col-md-4 control-label" for="company_zipcode">Zip code</label>  
+<div class="col-md-4">
+<input id="billadd_zip" name="company_zipcode" type="tel" placeholder="Zip code" class="form-control input-md" maxlength="6" required="">
+
+</div>
+</div>
+
+</Form>
+
+
+
+<script>
+
+// function fillAddress(){
+//     if ($(this).attr('checked')) { 
+//                 $("#shopadd_state").val($("#billadd_state").val());
+//                 $("#shopadd_city").val($("#billadd_city").val());
+//                 $("#shopadd_add1").val($("#billadd_add1").val()); 
+//                 $("#shopadd_add2").val($("#billadd_add2").val()); 
+//                 $("#shopadd_zip").val($("#billadd_zip").val()); 
+
+//     }
+//     else {
+//         $("#shopadd_state").val('');
+//         $("#shopadd_city").val('');
+//         $("#shopadd_add1").val(''); 
+//         $("#shopadd_add2").val('');  
+//         $("#shopadd_zip").val('');            
+// }
+// }
+
+
+window.onload = function() {
+    var shopadd_state = document.getElementById("shopadd_state"),
+        shopadd_city = document.getElementById("shopadd_city");
+        shopadd_add1 = document.getElementById("shopadd_add1");
+        shopadd_add2 = document.getElementById("shopadd_add2");
+        shopadd_zip = document.getElementById("shopadd_zip");
+        
+        billadd_state = document.getElementById("billadd_state");
+        billadd_city = document.getElementById("billadd_city");
+        billadd_add1 = document.getElementById("billadd_add1");
+        billadd_add2 = document.getElementById("billadd_add2");
+        billadd_zip = document.getElementById("billadd_zip");
+        
+
+    src.addEventListener('input', function() {
+        shopadd_state.value = billadd_state.value;
+        shopadd_city.value = billadd_city.value;
+        shopadd_add1.value = billadd_add1.value;
+        shopadd_add2.value = billadd_add2.value;
+        shopadd_zip.value = billadd_zip.value;
+    });
+};
+</script>

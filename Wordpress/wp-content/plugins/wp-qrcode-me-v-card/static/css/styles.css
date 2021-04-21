@@ -1,0 +1,13 @@
+#wqm_custom-post-box-settings {
+    background-color: #ccf3fa;
+}
+
+span.description {
+    display: block;
+}
+
+#wqm-picsrc {
+    width: 100px;
+    float: left;
+    padding-right: 2em;
+}

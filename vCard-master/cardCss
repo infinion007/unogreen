@@ -1,0 +1,101 @@
+
+
+.card-wrapper{
+    /*padding: 5px;
+    margin: 5px;
+    border-radius: 10px;*/
+}
+.wrapper-top{
+  margin: 5px;
+  margin-bottom: 0px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: #e6e6e6;
+
+}
+
+.wrapper-bottom{
+  padding-top: 10px;
+  margin: 5px;
+  margin-top: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #dadada;
+  padding-bottom: 35px;
+
+}
+.card-img-top{
+  margin: 0px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.desi{
+  font-size: .8em;
+  color: #616161;
+  margin: 0px;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.com{
+  font-size: .8em;
+color: #4a4949;
+}
+
+.phn, .email{
+  font-size: .8em;
+padding: 0 10px;
+margin: 0px;
+font-weight: 500;
+    color: #717171;
+    text-align: center;
+}
+
+.divider{
+  margin: 0px;
+  margin-bottom: 10px;
+}
+.fb{
+  color:#1849b7;
+}
+.tw{
+  color:#2da6ec;
+}
+.sp{
+  color:#1187ec;
+}
+.in{
+  color:#2d5090;
+}
+
+.card-title{
+  font-size: .95em;
+    margin: 0px;
+    padding: 0px;
+    color: #464a4c;
+    /*padding-top: 10px;*/
+}
+
+.card-block{
+  padding: 10px 20px;
+}
+
+.social a{
+  margin: 0px;
+  padding: 5px;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+p.social{
+  margin: 5px 0 5px 0 ;
+}
+
+.img-bottom{
+  position: absolute;
+bottom: 67px;
+left: 50%;
+margin-left: -60px;
+height: 30px;
+}

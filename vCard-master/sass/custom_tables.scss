@@ -1,0 +1,9 @@
+.thead-inverse {
+  th {
+    color: $table-inverse-color;
+    background-color: $t_light;
+    font-weight: normal;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}

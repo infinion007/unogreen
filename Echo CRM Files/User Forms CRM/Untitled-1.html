@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #hidden_div
+        {
+        display: none;
+        }        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <select id="back_date" name="form_select" onchange="showDiv('hidden_div', this)">
+        <option value="0">New Form</option>
+        <option value="1">Back Dated</option>
+     </select>
+     <div id="hidden_div">Select Date<br>
+     <input name="back_date" type="date" placeholder="Select Date" class="form-control input-md" required="">
+    </div>
+</body>
+<script>
+function showDiv(divId, element)
+{
+    document.getElementById(divId).style.display = element.value == 1 ? 'block' : 'none';
+}
+</script>
+</html>
